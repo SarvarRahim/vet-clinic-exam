@@ -928,3 +928,63 @@ input:not(:placeholder-shown):not(:focus):valid {
   border-radius: 0;
   background-color: var(--color-bg-link);
 }
+
+
+/* FOOTER SECTION  */
+
+.footer-content {
+  display: flex;
+  align-items: flex-start;
+}
+
+.footer-img__wrap {
+  margin-right: 68px;
+}
+
+.footer__list:not(:last-child) {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  margin-right: 87px;
+  white-space: nowrap;
+}
+
+.footer__item {
+  margin-bottom: 14px;
+}
+
+.footer__link {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21px;
+  color: var(--color-text);
+  font-family: var(--font-stack);
+  transition: color 0.3s ease;
+}
+
+.footer__link:hover {
+  color: var(--color-bg-link);
+}
+
+
+.days__work:not(:last-child):before {
+  display: block;
+  content: "";
+  width: 16px;
+  height: 16px;
+  background-image: url("../img/calendar-bg.svg");
+  background-repeat: no-repeat;
+  background-position: center left;
+  padding-left: 24px;
+}
+
+.days__work {
+  display: flex;
+  margin: 0;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  font-family: var(--font-stack);
+}
+
