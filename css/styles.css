@@ -194,7 +194,7 @@ body {
   line-height: 18px;
   color: var(--color-text);
   font-family: var(--font-stack);
-  margin-right: 17px;
+  margin-right: 20px;
 }
 
 
@@ -735,6 +735,7 @@ input:not(:placeholder-shown):not(:focus):valid {
 }
 
 .articles__wrapper {
+  display: flex;
   margin-top: 80px;
 }
 
@@ -932,6 +933,11 @@ input:not(:placeholder-shown):not(:focus):valid {
 
 /* FOOTER SECTION  */
 
+.site-footer {
+  padding-top: 61px;
+  padding-bottom: 66px;
+}
+
 .footer-content {
   display: flex;
   align-items: flex-start;
@@ -976,15 +982,73 @@ input:not(:placeholder-shown):not(:focus):valid {
   background-image: url("../img/calendar-bg.svg");
   background-repeat: no-repeat;
   background-position: center left;
-  padding-left: 24px;
+  padding-left: 20px;
 }
 
 .days__work {
   display: flex;
+  justify-content: center;
   margin: 0;
   font-weight: 500;
   font-size: 14px;
   line-height: 18px;
+  color: var(--color-text);
   font-family: var(--font-stack);
 }
 
+.footer__address {
+  display: flex;
+  align-items: flex-start;
+  margin-left: 130px;
+}
+
+.footer__address::before {
+  display: block;
+  content: "";
+  width: 16px;
+  height: 16px;
+  background-image: url("../img/home-bg.svg");
+  background-repeat: no-repeat;
+}
+
+.footer-address-clinic {
+  width: 157px;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 21px;
+}
+
+.footer-address__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  margin-left: 112px;
+}
+
+.footer-address__list::before {
+  display: block;
+  content: "";
+  width: 16px;
+  height: 16px;
+  background-image: url("../img/Phone-bg.svg");
+  background-repeat: no-repeat;
+}
+
+.footer__item {
+  margin-bottom: 4px;
+}
+
+.footer-clinic-tel {
+   text-decoration: none;
+   font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: right;
+  color: var(--color-text);
+  font-family: var(--font-stack);
+  transition: color 0.3s ease;
+}
+
+.footer-clinic-tel:hover {
+  color: var(--color-bg-link);
+}
