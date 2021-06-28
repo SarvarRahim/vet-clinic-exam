@@ -9,7 +9,7 @@
 @font-face {
   font-family: 'FuturaPT';
   src: url('../fonts/FuturaPT-Bold.woff2') format('woff2'),
-      url('../fonts/FuturaPT-Bold.woff') format('woff');
+  url('../fonts/FuturaPT-Bold.woff') format('woff');
   font-weight: bold;
   font-style: normal;
   font-display: swap;
@@ -18,7 +18,7 @@
 @font-face {
   font-family: 'FuturaPT';
   src: url('../fonts/FuturaPT-Book.woff2') format('woff2'),
-    url('../fonts/FuturaPT-Book.woff') format('woff');
+  url('../fonts/FuturaPT-Book.woff') format('woff');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -27,7 +27,7 @@
 @font-face {
   font-family: 'FuturaPT';
   src: url('../fonts/FuturaPT-Light.woff2') format('woff2'),
-    url('../fonts/FuturaPT-Light.woff') format('woff');
+  url('../fonts/FuturaPT-Light.woff') format('woff');
   font-weight: 300;
   font-style: normal;
   font-display: swap;
@@ -36,7 +36,7 @@
 @font-face {
   font-family: 'FuturaPT';
   src: url('../fonts/FuturaPT-Medium.woff2') format('woff2'),
-    url('../fonts/FuturaPT-Medium.woff') format('woff');
+  url('../fonts/FuturaPT-Medium.woff') format('woff');
   font-weight: 500;
   font-style: normal;
   font-display: swap;
@@ -1065,6 +1065,9 @@ input:not(:placeholder-shown):not(:focus):valid {
   z-index: 1;
   padding-top: 110px;
   padding-bottom: 270px;
+  background-image: url("../img/popugay.png");
+  background-repeat: no-repeat;
+  background-position: calc(50% - -420px) 970px;
 }
 
 .faq::after {
@@ -1274,10 +1277,10 @@ input:not(:placeholder-shown):not(:focus):valid {
 
 .modal {
   position: fixed;
-  z-index: 9;
+  z-index: 99;
   top: 5%;
   display: none;
-  width: 850px;
+  width: 100%;
   height: 100%;
   background-repeat: no-repeat;
   background-image: url("../img/popup_1.png");
