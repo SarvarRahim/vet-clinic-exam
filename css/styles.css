@@ -1057,6 +1057,313 @@ input:not(:placeholder-shown):not(:focus):valid {
   color: var(--color-bg-link);
 }
 
+/* SERVICES  */
+
+/* GENERAL */
+html {
+  box-sizing: border-box;
+  height: 100%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  background-color: #f2f2f2;
+}
+
+.container {
+  max-width: 1350px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+/* CARDS PAGE  */
+
+.services {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+
+.services-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  margin-left: -30px;
+}
+
+.services-tabs__item {
+  display: flex;
+  flex-direction: column;
+  width: 305px;
+  background-color: #FFFFFF;
+  border-radius: 5px 5px 0px 0px;
+  margin-left: 30px;
+  padding: 58px 22px 45px 53px;
+  margin-bottom: 32px;
+  transition: filter 0.5s ease;
+  background-image: url("../img/pet.svg");
+  background-repeat: no-repeat;
+  background-position: right top;
+  background-size: 143px 138px;
+}
+
+.services-tabs__item:hover {
+  filter: drop-shadow(0px 4px 20px rgba(0, 0, 0, 0.2));
+}
+
+.services-tabs__item:nth-child(even) .services-tabs__link {
+  background-color: #78C0DE;
+  transition: background-color 0.3s ease;
+}
+
+.services-tabs__item:nth-child(even) .services-tabs__link:hover {
+  background-color: #333;
+}
+
+.services-tabs__item::before {
+  display: block;
+  content: "";
+  width: 86px;
+  height: 77px;
+  background-image: url("../img/uslugi1.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.services-tabs__item--wooman-doctor::before {
+  background-image: url("../img/uslugi2.png");
+}
+
+.services-tabs__item--dog::before {
+  background-image: url("../img/uslugi3.png");
+}
+
+.services-tabs__item--dermotology::before {
+  background-image: url("../img/uslugi4.png");
+}
+
+.services-tabs__item--loborotory::before {
+  background-image: url("../img/uslugi5.png");
+}
+
+.services-tabs__item--oftolmogy::before {
+  background-image: url("../img/uslugi6.png");
+}
+
+.services-tabs__item--uzi::before{
+  background-image: url("../img/uslugi7.png");
+}
+
+.services-tabs__item--injection::before {
+  background-image: url(../img/uslugi8.png);
+}
+
+.services-tabs__item--passport::before {
+  background-image: url("../img/uslugi9.png");
+}
+
+.services-tabs__item--vaksiny::before {
+  background-image: url("../img/uslugi10.png");
+}
+
+.services-tabs__item--stomology::before {
+  background-image: url("../img/uslugi2.png");
+}
+
+
+.services-tabs__title {
+  margin: 0;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 34px;
+  color: #333333;
+  margin-top: 20px;
+}
+
+.services-tabs__text {
+  margin: 0;
+  font-size: 16px;
+  line-height: 20px;
+  color: #949494;
+  margin-top: 14px;
+}
+
+.btn {
+  display: inline-block;
+  text-decoration: none;
+  font-weight: 450;
+  font-size: 16px;
+  line-height: 21px;
+  text-align: center;
+  color: #fff;
+  padding: 15px 30px;
+  border-radius: 3px;
+  margin-right: auto;
+  margin-top: 26px;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #333;
+}
+
+.services-tabs__link {
+  background-color: #FFBD54;
+}
+
+
+/* FOOTER  */
+
+.site-footer {
+  padding-top: 62px;
+  padding-bottom: 70px;
+  background-color: #ebebeb;
+}
+
+.site-footer__content {
+  display: flex;
+  align-items: flex-start;
+}
+
+.logo-img {
+  display: block;
+  margin-right: 67px;
+}
+
+.site-footer__list{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  margin-right: 88px;
+}
+
+.site-footer__list-second {
+  margin-right: 62px;
+}
+
+
+.site-footer__item:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+.site-footer__link {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21px;
+  color: #333333;
+}
+
+/* DAYS  */
+
+.days-clinic {
+  margin-right: 110px;
+}
+
+.days-clinic__date {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  margin: 0;
+}
+
+.days-clinic__date:not(:last-child):before {
+  display: block;
+  content: "";
+  width: 16px;
+  height: 16px;
+  background-image: url("../img/calendar-bg.svg");
+  background-repeat: no-repeat;
+  margin-right: 9px;
+}
+
+/* ADDRESS  */
+
+
+.address-clinic__horizontal {
+  display: flex;
+  margin: 0;
+}
+
+.address-clinic__horizontal::before {
+  display: block;
+  content: "";
+  width: 16px;
+  height: 16px;
+  background-image: url("../img/calendar-bg.svg");
+  background-repeat: no-repeat;
+}
+
+.address-clinic__text {
+  margin: 0;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  color: #333333;
+}
+
+/* NUMBERS  */
+
+.clinic-number__box {
+  display: flex;
+  margin-left: 90px;
+}
+
+.clinic-number__box::before {
+  display: block;
+  content: "";
+  width: 16px;
+  height: 16px;
+  background-image: url("../img/Phone-bg.svg");
+  background-repeat: no-repeat;
+  margin-right: 9px;
+}
+
+.clinic-number__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.clinic-number__item:not(:last-child) {
+  margin-bottom: 4px;
+}
+
+.clinic-number__link {
+  text-decoration: none;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: right;
+  color: #333333;
+}
+
 
 /* FAQ PAGE  */
 
